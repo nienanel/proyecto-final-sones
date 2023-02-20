@@ -22,6 +22,18 @@ $text-color: #008CF7;
     
 }
 
+@mixin h1 {
+  color: $base-color;
+  text-decoration: underline $base-color;
+  font-family: $primary-font-family;
+}
+
+@mixin h2 {
+  color: #008CF7;
+  font-weight: 700;
+  font-family: $secondary-font-family;
+}
+
 @mixin h3 {
     color: #FF0075;
     font-family: $primary-font-family;

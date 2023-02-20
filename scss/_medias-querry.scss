@@ -1,0 +1,25 @@
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 450px) and (max-width:768px) {
+
+    // pagina contacto
+
+    .contacto-main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "contacto" "mapa";
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}

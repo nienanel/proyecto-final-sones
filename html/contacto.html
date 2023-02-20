@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contacto</title>
-    <link rel="shortcut icon" href="iconos/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../iconos/favicon.ico" type="image/x-icon">
     <!------------------------css------------------------------>
     <link rel="stylesheet" href="../css/estilo.css">
     <!--------------------- fuentes --------------------------->
@@ -26,6 +26,174 @@
 
 <body>
 
+    <video src="../video/contacto.mp4" autoplay loop></video>
+    <!-- header -->
+    <header class="d-flex row justify-content-center">
+        <nav class="navbar2 navbar-expand-lg navbar-dark bg-dark mb-3 mt-2">
+            <div class="redes container-fluid  justify-content-center d-flex  p-1">
+                <ul>
+                    <li><a class="px-1" href="https://www.twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
+                    </li>
+                    <li><a class="px-1" href="https://www.facebook.com" target="_blank"><i
+                                class="bi bi-facebook"></i></a>
+                    </li>
+                    <li><a class="px-2" href="https://www.instagram.com" target="_blank"><i
+                                class="bi bi-instagram"></i></a>
+                    </li>
+                    <li> <a class="px-2 me-5" href="https://www.windy.com/?-41.144,-71.301,5" target="_blank"><i
+                                class="bi bi-thermometer-snow"></i></a></li>
+                    <li><a class="px-2" href="mailto:sonesemanuel@gmai.com" target="_blank"><i
+                                class="bi bi-envelope-fill"></i></a></li>
+                    <li><a class="px-2" href="whatsup.com" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex flex-row mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand px-2 ms-5" href="index.html"><span class="brand">
+                        <h1>Andes freeride</h1>
+                    </span></a>
+                <img src="../iconos/montana2.png" alt="dibujo de montaña" width="30" height="24">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse p-2" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-5">
+                        <li class="nav-item px-2">
+                            <a class="nav-home nav-link active" aria-current="page" href="../index.html">home</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-filo nav-link" href="#">filosofia</a>
+                        </li>
+                        <li class="nav-camp nav-item px-2">
+                            <a class="nav-link" href="#">campus</a>
+                        </li>
+                        <li class="nav-exp nav-item dropdown px-2">
+                            <a class="boton nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                expediciones
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">bariloche</a></li>
+                                <li><a class="dropdown-item" href="#">chile</a></li>
+                                <li><a class="dropdown-item" href="#">mendoza</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Faq</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-contacto nav-item px-2">
+                            <a class="nav-link" href="contacto.html">contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contacto-main container-fluid">
+        <div class="contacto container mt-5 ms-5 text-center" style="width: 90%; height: 100%;">
+            <div class="contacto-prologo ms-2 mt-2">
+                <h1>CONTACTANOS</h1>
+                <h2>Consultas o reservas</h2>
+            </div>
+            <form class="formulario mt-5">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"></label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="@email">
+                    <div id="emailHelp" class="form-text">todos nuestros datos estan encryptados!.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="input" class="form-label"></label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="nombre y apellido">
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" aria-label="With textarea"
+                        style="width: 100%; height: 15rem;" placeholder="Escribinos!"></textarea>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1"><span class="box me-5">subscribirme al newslatter</span></label>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary me-2">enviar</button>
+                    <button type="reset" class="btn btn-primary">borrar</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="imagen-contacto me-5">
+            <img class="img-fluid mt-5 me-5" style="width: 100; height: 100%;" src="../img/contacto1.jpg" alt="foto de filo">
+        </div>
+
+        <div class="mapa ms-5 mt-5" style="height: 70%; width: 90%;">
+            <h3 class="text-center">buscanos!</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d48115.64522997921!2d-71.45007749999999!3d-41.08586855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1676858781721!5m2!1ses-419!2sar"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!---------------------- scripts ----------------------->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

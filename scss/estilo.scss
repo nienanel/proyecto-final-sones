@@ -1,4 +1,4 @@
-@import "variables", "header", "video", "hero";
+@import "variables", "header", "video", "hero", "_medias-querry";
 
 * {
     margin: 0;
@@ -7,6 +7,8 @@
 
 body {
     overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
 }
 
 
@@ -15,25 +17,82 @@ body {
 main {
 
 
-.filosofia {
-    background-color: white;
-    display: grid;
-    row-gap: 2rem;
-    width: 95vw;
-    
+    .filosofia {
+        background-color: white;
+        display: grid;
+        row-gap: 2rem;
+        width: 95vw;
 
-    h3 {
-        @include h3;
-        border-top: 5px solid $base-color
-    }
 
-    p {
-        @include p;
-    }
+        h3 {
+            @include h3;
+            border-top: 5px solid $base-color
+        }
 
-    img {
-        border: 5px solid white;
-        
+        p {
+            @include p;
+        }
+
+        img {
+            border: 5px solid white;
+
+        }
     }
 }
+
+
+// pagina contacto
+
+.contacto-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "contacto imagen" "mapa imagen";
+    row-gap: 2rem;
+
+
+    .contacto-prologo {
+        background-color: $secondary-color;
+        border-radius: 20px;
+
+        h1 {
+            @include h1;
+        }
+
+        h2 {
+            @include h2;
+        }
+    }
+
+    .contacto {
+        background-color: black;
+        grid-area: contacto;
+        border-radius: 15px;
+        color: white;
+
+        ::placeholder {
+            font-family: $secondary-font-family;
+        }
+
+        .formulario {
+            .box {
+                color: $secondary-color;
+            }
+        }
+    }
+
+    .imagen-contacto {
+        grid-area: imagen;
+        justify-self: end;
+    }
+
+    .mapa {
+        grid-area: mapa;
+        background-color: $secondary-color;
+        border-radius: 15px;
+
+        h3 {
+            @include h3;
+        }
+    }
 }

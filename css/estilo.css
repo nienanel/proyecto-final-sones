@@ -88,6 +88,14 @@ video {
   background-color: #C2F739;
 }
 
+@media (min-width: 450px) and (max-width: 768px) {
+  .contacto-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "contacto" "mapa";
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -95,6 +103,8 @@ video {
 
 body {
   overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 
 main .filosofia {
@@ -115,6 +125,54 @@ main .filosofia p {
 }
 main .filosofia img {
   border: 5px solid white;
+}
+
+.contacto-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "contacto imagen" "mapa imagen";
+  row-gap: 2rem;
+}
+.contacto-main .contacto-prologo {
+  background-color: #C2F739;
+  border-radius: 20px;
+}
+.contacto-main .contacto-prologo h1 {
+  color: #FF0075;
+  text-decoration: underline #FF0075;
+  font-family: "Barrio", cursive;
+}
+.contacto-main .contacto-prologo h2 {
+  color: #008CF7;
+  font-weight: 700;
+  font-family: "Indie Flower", cursive;
+}
+.contacto-main .contacto {
+  background-color: black;
+  grid-area: contacto;
+  border-radius: 15px;
+  color: white;
+}
+.contacto-main .contacto ::placeholder {
+  font-family: "Indie Flower", cursive;
+}
+.contacto-main .contacto .formulario .box {
+  color: #C2F739;
+}
+.contacto-main .imagen-contacto {
+  grid-area: imagen;
+  justify-self: end;
+}
+.contacto-main .mapa {
+  grid-area: mapa;
+  background-color: #C2F739;
+  border-radius: 15px;
+}
+.contacto-main .mapa h3 {
+  color: #FF0075;
+  font-family: "Barrio", cursive;
+  text-decoration: underline #FF0075;
 }
 
 /*# sourceMappingURL=estilo.css.map */
