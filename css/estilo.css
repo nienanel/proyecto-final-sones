@@ -1,0 +1,120 @@
+/****************** variables **************/
+/********fuentes*********/
+/******paleta de colores *****/
+/******* mixin *********/
+header {
+  background-size: cover;
+}
+header .navbar {
+  font-family: "Barrio", cursive;
+  font-size: 2rem;
+  border-radius: 20px;
+  width: 100vw;
+}
+header .navbar .brand:hover {
+  color: #FF0075;
+}
+header .navbar .collapse .nav-home {
+  border: 1px solid white;
+  border-radius: 30px;
+  transition: all ease-in 0.5s;
+}
+header .navbar .collapse .nav-home:hover {
+  background-color: #FF0075;
+  border-radius: 30px;
+}
+header .navbar .collapse .nav-filo {
+  border: 1px solid white;
+  border-radius: 30px;
+  transition: all ease-in 0.5s;
+}
+header .navbar .collapse .nav-filo:hover {
+  background-color: #FFEF00;
+}
+header .navbar .collapse .nav-camp {
+  border: 1px solid white;
+  border-radius: 30px;
+  transition: all ease-in 0.5s;
+}
+header .navbar .collapse .nav-camp:hover {
+  background-color: #008CF7;
+}
+header .navbar .collapse .nav-exp {
+  border: 1px solid white;
+  border-radius: 30px;
+  transition: all ease-in 0.5s;
+}
+header .navbar .collapse .nav-exp:hover {
+  background-color: #C2F739;
+}
+header .navbar .collapse .nav-exp .dropdown-menu {
+  border-radius: 15px;
+  padding: 10px;
+}
+header .navbar .collapse .nav-exp .dropdown-menu a:hover {
+  background-color: #C2F739;
+}
+header .navbar .collapse .nav-contacto {
+  border: 1px solid white;
+  border-radius: 30px;
+  transition: all ease-in 0.5s;
+}
+header .navbar .collapse .nav-contacto:hover {
+  background-color: #FF0075;
+}
+header .navbar2 ul {
+  list-style: none;
+}
+header .navbar2 ul li {
+  display: inline-block;
+}
+header .navbar2 ul li i {
+  font-size: 1.2rem;
+  color: #C2F739;
+}
+
+video {
+  position: fixed;
+  z-index: -1;
+  right: 0;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.hero h2 {
+  font-family: "Indie Flower", cursive;
+  background-color: #C2F739;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+main .filosofia {
+  background-color: white;
+  display: grid;
+  row-gap: 2rem;
+  width: 95vw;
+}
+main .filosofia h3 {
+  color: #FF0075;
+  font-family: "Barrio", cursive;
+  text-decoration: underline #FF0075;
+  border-top: 5px solid #FF0075;
+}
+main .filosofia p {
+  font-size: 1rem;
+  font-family: "Indie Flower", cursive;
+}
+main .filosofia img {
+  border: 5px solid white;
+}
+
+/*# sourceMappingURL=estilo.css.map */

@@ -1,0 +1,94 @@
+header {
+    background-size: cover;
+
+
+    .navbar {
+        font-family: $primary-font-family;
+        font-size: $normal-font;
+        border-radius: 20px;
+        width: 100vw;
+
+        .brand {
+
+            &:hover {
+                color: $base-color
+            }
+        }
+
+        .collapse {
+
+            .nav-home {
+                @include nav;
+
+                &:hover {
+                    background-color: $base-color;
+                    border-radius: 30px;
+                }
+            }
+
+            .nav-filo {
+                @include nav;
+
+                &:hover {
+                    background-color: $primary-color;
+                }
+            }
+
+            .nav-camp {
+                @include nav;
+
+                &:hover {
+                    background-color: $text-color;
+                }
+            }
+
+            .nav-exp {
+                @include nav;
+
+                &:hover {
+                    background-color: $secondary-color;
+                }
+
+                .dropdown-menu {
+                    border-radius: 15px;
+                    padding: 10px;
+
+                    a {
+                        &:hover {
+                            background-color: $secondary-color;
+
+                        }
+                    }
+                }
+            }
+
+
+            .nav-contacto {
+                @include nav;
+
+                &:hover {
+                    background-color: $base-color;
+                }
+            }
+        }
+    }
+
+
+
+    .navbar2 {
+
+        ul {
+            list-style: none;
+
+            li {
+                display: inline-block;
+
+                i {
+                    font-size: 1.2rem;
+                    color: $secondary-color;
+                }
+
+            }
+        }
+    }
+}

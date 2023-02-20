@@ -1,0 +1,34 @@
+/****************** variables **************/
+
+/********fuentes*********/
+$primary-font-family: 'Barrio', cursive;
+$secondary-font-family: 'Indie Flower', cursive;
+$normal-font: 2rem;
+$small-font: 1rem;
+$large-font: 3rem;
+
+/******paleta de colores *****/
+$base-color: #FF0075;
+$primary-color: #FFEF00;
+$secondary-color: #C2F739;
+$text-color: #008CF7;
+
+/******* mixin *********/
+
+@mixin nav {
+    border: 1px solid white;
+    border-radius: 30px;
+    transition: all ease-in .5s;
+    
+}
+
+@mixin h3 {
+    color: #FF0075;
+    font-family: $primary-font-family;
+  text-decoration: underline $base-color;
+}
+
+@mixin p {
+    font-size: $small-font;
+   font-family: $secondary-font-family;
+}

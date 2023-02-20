@@ -1,0 +1,39 @@
+@import "variables", "header", "video", "hero";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+// main index
+
+main {
+
+
+.filosofia {
+    background-color: white;
+    display: grid;
+    row-gap: 2rem;
+    width: 95vw;
+    
+
+    h3 {
+        @include h3;
+        border-top: 5px solid $base-color
+    }
+
+    p {
+        @include p;
+    }
+
+    img {
+        border: 5px solid white;
+        
+    }
+}
+}
