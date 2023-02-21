@@ -107,6 +107,16 @@ body {
   height: 100vh;
 }
 
+main .noticias .card-body h4 {
+  color: #C2F739;
+}
+main .noticias .card-body p {
+  font-size: 1rem;
+  font-family: "Indie Flower", cursive;
+}
+main .noticias .card-body button {
+  text-decoration: none;
+}
 main .filosofia {
   background-color: white;
   display: grid;
@@ -123,8 +133,24 @@ main .filosofia p {
   font-size: 1rem;
   font-family: "Indie Flower", cursive;
 }
-main .filosofia img {
-  border: 5px solid white;
+main .filosofia h4 {
+  font-weight: 700;
+}
+main .filosofia h5 {
+  color: #FFEF00;
+}
+main .filosofia .guias img {
+  box-shadow: 5px 5px #FF0075;
+  filter: grayscale(100%);
+  transition: all ease-in 0.5s;
+}
+main .filosofia .guias img:hover {
+  filter: grayscale(10%);
+}
+
+.contacto-hero {
+  border-bottom: 5px solid #C2F739;
+  background-color: black;
 }
 
 .contacto-main {
@@ -163,6 +189,7 @@ main .filosofia img {
 .contacto-main .imagen-contacto {
   grid-area: imagen;
   justify-self: end;
+  background-color: black;
 }
 .contacto-main .mapa {
   grid-area: mapa;

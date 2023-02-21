@@ -16,10 +16,10 @@ $text-color: #008CF7;
 /******* mixin *********/
 
 @mixin nav {
-    border: 1px solid white;
-    border-radius: 30px;
-    transition: all ease-in .5s;
-    
+  border: 1px solid white;
+  border-radius: 30px;
+  transition: all ease-in .5s;
+
 }
 
 @mixin h1 {
@@ -35,12 +35,16 @@ $text-color: #008CF7;
 }
 
 @mixin h3 {
-    color: #FF0075;
-    font-family: $primary-font-family;
+  color: #FF0075;
+  font-family: $primary-font-family;
   text-decoration: underline $base-color;
 }
 
+@mixin h4 {
+  color: #C2F739;
+}
+
 @mixin p {
-    font-size: $small-font;
-   font-family: $secondary-font-family;
+  font-size: $small-font;
+  font-family: $secondary-font-family;
 }

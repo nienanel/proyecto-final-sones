@@ -16,6 +16,21 @@ body {
 
 main {
 
+    .noticias {
+        .card-body {
+
+            h4 {
+                @include h4;
+            }
+
+            p {
+                @include p;
+            }
+            button {
+                text-decoration: none;
+            }
+        }
+    }
 
     .filosofia {
         background-color: white;
@@ -33,9 +48,25 @@ main {
             @include p;
         }
 
-        img {
-            border: 5px solid white;
+        h4 {
+            font-weight: 700;
+        }
 
+        h5 {
+            color: $primary-color;
+        }
+
+        .guias {
+
+            img {
+                box-shadow: 5px 5px $base-color;
+                filter: grayscale(100%);
+                transition: all ease-in .5s;
+
+                &:hover {
+                    filter: grayscale(10%);
+                }
+            }
         }
     }
 }
@@ -43,6 +74,12 @@ main {
 
 // pagina contacto
 
+.contacto-hero {
+    
+    border-bottom: 5px solid $secondary-color;
+    background-color: black;
+    
+}
 .contacto-main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -84,6 +121,7 @@ main {
     .imagen-contacto {
         grid-area: imagen;
         justify-self: end;
+        background-color: black;
     }
 
     .mapa {
