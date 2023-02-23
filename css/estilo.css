@@ -1,4 +1,4 @@
-/****************** variables **************/
+/* ***************** variables ************* */
 /********fuentes*********/
 /******paleta de colores *****/
 /******* mixin *********/
@@ -96,6 +96,32 @@ video {
     grid-template-areas: "contacto" "mapa";
   }
 }
+/*************** footer *********/
+footer {
+  background-color: black;
+  border-top: 3px solid #FF0075;
+}
+footer .legales {
+  font-weight: 500;
+  color: #C2F739;
+}
+footer .redes-f a i {
+  color: #C2F739;
+}
+footer .redes-f a i:hover {
+  color: #FF0075;
+}
+footer .links ul {
+  list-style: none;
+}
+footer .links ul li a {
+  text-decoration: none;
+  color: #C2F739;
+}
+footer .links ul li a:hover {
+  color: #FF0075;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -147,13 +173,39 @@ main .filosofia .guias img {
 main .filosofia .guias img:hover {
   filter: grayscale(10%);
 }
+main .galeria .galeria2 {
+  background-color: white;
+}
+main .galeria .galeria2 h3 {
+  color: #FF0075;
+  font-family: "Barrio", cursive;
+  text-decoration: underline #FF0075;
+}
+main .galeria .fotos {
+  background-color: white;
+  row-gap: 2rem;
+}
+main .galeria .fotos img {
+  border: 3px solid #C2F739;
+  box-shadow: 4px 4px 4px 4px #C2F739;
+  transition: all ease-in 0.5s;
+}
+main .galeria .fotos img:hover {
+  translate: 0 -15px;
+}
+
+.pre h2 {
+  color: #008CF7;
+  font-weight: 700;
+  font-family: "Indie Flower", cursive;
+}
 
 .contacto-hero {
-  border-bottom: 5px solid #C2F739;
-  background-color: black;
+  height: 50vh;
 }
 
 .contacto-main {
+  background-color: black;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -164,21 +216,22 @@ main .filosofia .guias img:hover {
   background-color: #C2F739;
   border-radius: 20px;
 }
-.contacto-main .contacto-prologo h1 {
-  color: #FF0075;
-  text-decoration: underline #FF0075;
-  font-family: "Barrio", cursive;
-}
 .contacto-main .contacto-prologo h2 {
   color: #008CF7;
   font-weight: 700;
   font-family: "Indie Flower", cursive;
+}
+.contacto-main .contacto-prologo h3 {
+  color: #FF0075;
+  font-family: "Barrio", cursive;
+  text-decoration: underline #FF0075;
 }
 .contacto-main .contacto {
   background-color: black;
   grid-area: contacto;
   border-radius: 15px;
   color: white;
+  box-shadow: 5px 5px 5px 5px #C2F739;
 }
 .contacto-main .contacto ::placeholder {
   font-family: "Indie Flower", cursive;
@@ -188,8 +241,8 @@ main .filosofia .guias img:hover {
 }
 .contacto-main .imagen-contacto {
   grid-area: imagen;
-  justify-self: end;
-  background-color: black;
+  display: flex;
+  justify-content: center;
 }
 .contacto-main .mapa {
   grid-area: mapa;
@@ -200,6 +253,18 @@ main .filosofia .guias img:hover {
   color: #FF0075;
   font-family: "Barrio", cursive;
   text-decoration: underline #FF0075;
+}
+.contacto-main .mapa .datos {
+  background-color: #C2F739;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 5px 5px #C2F739;
+  border-radius: 10px;
+}
+.contacto-main .mapa .datos i {
+  color: #008CF7;
 }
 
 /*# sourceMappingURL=estilo.css.map */

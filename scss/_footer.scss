@@ -1,0 +1,44 @@
+/*************** footer *********/
+
+footer {
+    background-color: black;
+    border-top: 3px solid $base-color;
+
+
+    .legales {
+        font-weight: 500;
+        color: $secondary-color;
+    }
+
+    .redes-f {
+        a {
+            i {
+                color: $secondary-color;
+
+                &:hover {
+                    color: $base-color;
+                }
+            }
+        }
+    }
+
+    .links {
+
+        ul {
+            list-style: none;
+
+            li {
+
+                a {
+                    text-decoration: none;
+                    color: $secondary-color;
+
+                    &:hover {
+                        color: $base-color;
+                    }
+                }
+            }
+        }
+
+    }
+}

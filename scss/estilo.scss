@@ -1,4 +1,4 @@
-@import "variables", "header", "video", "hero", "_medias-querry";
+@import "variables", "header", "video", "hero", "_medias-querry", "footer";
 
 * {
     margin: 0;
@@ -26,6 +26,7 @@ main {
             p {
                 @include p;
             }
+
             button {
                 text-decoration: none;
             }
@@ -69,35 +70,70 @@ main {
             }
         }
     }
+
+    // galeria
+
+    .galeria {
+
+        .galeria2 {
+            background-color: white;
+
+            h3 {
+                @include h3;
+            }
+        }
+
+        .fotos {
+            background-color: white;
+            row-gap: 2rem;
+
+
+            img {
+                border: 3px solid $secondary-color;
+                box-shadow: 4px 4px 4px 4px $secondary-color;
+                transition: all ease-in .5s;
+
+                &:hover {
+                    translate: 0 -15px
+                }
+            }
+        }
+    }
 }
 
 
 // pagina contacto
 
-.contacto-hero {
-    
-    border-bottom: 5px solid $secondary-color;
-    background-color: black;
-    
+.pre {
+    h2 {
+        @include h2;
+
+    }
 }
+
+.contacto-hero {
+
+    height: 50vh;
+}
+
 .contacto-main {
+    background-color: black;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "contacto imagen" "mapa imagen";
     row-gap: 2rem;
 
-
     .contacto-prologo {
         background-color: $secondary-color;
         border-radius: 20px;
 
-        h1 {
-            @include h1;
-        }
-
         h2 {
             @include h2;
+        }
+
+        h3 {
+            @include h3;
         }
     }
 
@@ -106,6 +142,8 @@ main {
         grid-area: contacto;
         border-radius: 15px;
         color: white;
+        box-shadow: 5px 5px 5px 5px $secondary-color;
+
 
         ::placeholder {
             font-family: $secondary-font-family;
@@ -120,8 +158,10 @@ main {
 
     .imagen-contacto {
         grid-area: imagen;
-        justify-self: end;
-        background-color: black;
+        display: flex;
+        justify-content: center;
+
+
     }
 
     .mapa {
@@ -131,6 +171,19 @@ main {
 
         h3 {
             @include h3;
+        }
+
+        .datos {
+            background-color: $secondary-color;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            @include caja;
+
+            i {
+                color: $text-color;
+            }
         }
     }
 }

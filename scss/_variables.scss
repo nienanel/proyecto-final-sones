@@ -1,4 +1,4 @@
-/****************** variables **************/
+/* ***************** variables ************* */
 
 /********fuentes*********/
 $primary-font-family: 'Barrio', cursive;
@@ -47,4 +47,9 @@ $text-color: #008CF7;
 @mixin p {
   font-size: $small-font;
   font-family: $secondary-font-family;
+}
+
+@mixin caja {
+  box-shadow: 5px 5px 5px 5px $secondary-color;
+  border-radius: 10px;
 }
