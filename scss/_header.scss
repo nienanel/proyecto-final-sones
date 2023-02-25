@@ -6,7 +6,9 @@ header {
         font-family: $primary-font-family;
         font-size: $normal-font;
         border-radius: 20px;
-        width: 100vw;
+        width: 90vw;
+        translate: 0 -2rem;
+        z-index: 1;
 
         .brand {
 
@@ -62,7 +64,6 @@ header {
                 }
             }
 
-
             .nav-contacto {
                 @include nav;
 
@@ -86,6 +87,10 @@ header {
                 i {
                     font-size: 1.2rem;
                     color: $secondary-color;
+
+                    &:hover {
+                        color: $base-color;
+                    }
                 }
 
             }

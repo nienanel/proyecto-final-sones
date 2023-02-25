@@ -2,7 +2,9 @@
 
 footer {
     background-color: black;
-    border-top: 3px solid $base-color;
+    border-top: 3px solid $secondary-color;
+    position: fixed bottom;
+    margin-bottom: 0;
 
 
     .legales {
@@ -11,9 +13,11 @@ footer {
     }
 
     .redes-f {
+        
         a {
-            i {
+            .ic {
                 color: $secondary-color;
+                font-size: 1.5rem;
 
                 &:hover {
                     color: $base-color;
@@ -30,7 +34,7 @@ footer {
             li {
 
                 a {
-                    text-decoration: none;
+                    text-decoration: underline;
                     color: $secondary-color;
 
                     &:hover {

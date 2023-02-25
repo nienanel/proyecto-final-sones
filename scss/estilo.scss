@@ -1,4 +1,4 @@
-@import "variables", "header", "video", "hero", "_medias-querry", "footer";
+@import "variables", "header", "icono-up", "video", "hero","acordeon", "medias-querry", "footer";
 
 * {
     margin: 0;
@@ -29,6 +29,13 @@ main {
 
             button {
                 text-decoration: none;
+                font-family: $secondary-font-family;
+                background-color: $secondary-color;
+
+                &:hover {
+                    background-color: $text-color;
+                    color: $secondary-color;
+                }
             }
         }
     }
@@ -38,6 +45,7 @@ main {
         display: grid;
         row-gap: 2rem;
         width: 95vw;
+        border-radius: 10px;
 
 
         h3 {
@@ -77,6 +85,7 @@ main {
 
         .galeria2 {
             background-color: white;
+            border-radius: 15px;
 
             h3 {
                 @include h3;
@@ -92,32 +101,29 @@ main {
                 border: 3px solid $secondary-color;
                 box-shadow: 4px 4px 4px 4px $secondary-color;
                 transition: all ease-in .5s;
+                filter: contrast(50%);
 
                 &:hover {
-                    translate: 0 -15px
+                    translate: 0 -5px;
+                    filter: contrast(100%)
                 }
             }
         }
     }
 }
 
-
 // pagina contacto
 
 .pre {
     h2 {
         @include h2;
+        height: 20rem;
 
     }
 }
 
-.contacto-hero {
-
-    height: 50vh;
-}
-
 .contacto-main {
-    background-color: black;
+    background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -186,4 +192,63 @@ main {
             }
         }
     }
+}
+
+// expediciones
+
+.expe-main {
+
+    p {
+        @include p;
+    }
+
+    .expe-prologo {
+        height: 25rem;
+
+        h2 {
+            @include h2;
+            background-color: black;
+        }
+    }
+
+    .señales {
+        color: $secondary-color;
+        border: 1px dotted black;
+        width: 50%;
+        background-color: black;
+    }
+
+    .bari {
+        background-color: $base-color;
+
+        h3 {
+            @include h3;
+            background-color: black;
+        }
+    }
+
+    .mendoza {
+        background-color: $primary-color;
+
+
+        h3 {
+            @include h3;
+            background-color: black;
+        }
+    }
+
+    .chile {
+        background-color: $text-color;
+
+        h3 {
+            @include h3;
+            background-color: black;
+        }
+    }
+}
+
+// faq
+
+.faq-body {
+    background-image: url(../img/fondo-faq.jpg); 
 }

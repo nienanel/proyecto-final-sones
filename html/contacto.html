@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contacto</title>
     <link rel="shortcut icon" href="../iconos/favicon.ico" type="image/x-icon">
-    <!------------------------css------------------------------>
-    <link rel="stylesheet" href="../css/estilo.css">
     <!--------------------- fuentes --------------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,19 +14,22 @@
     <!-----------------------bootstrap-------------------------->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!------------------------css------------------------------>
+    <link rel="stylesheet" href="../css/estilo.css">
     <!-----------------------iconos---------------------------->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!------------------------animate-------------------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <meta name="description" content="web de empresa de expediciones de ski de travesia">
+    <!-------------------------meta description ---------------->
+    <meta name="description" content="seccion de reservas y contacto">
 </head>
 
 <body>
     <!-- video fondo -->
     <video src="../video/index1.mp4 " autoplay loop>video montaña</video>
     <!-- header -->
-    <header class="d-flex row justify-content-center">
+    <header class="d-flex row justify-content-center" id="main-contacto">
         <nav class="navbar2 navbar-expand-lg navbar-dark bg-dark mb-3 mt-2">
             <div class="redes container-fluid  justify-content-center d-flex  p-1">
                 <ul>
@@ -51,7 +52,8 @@
         </nav>
         <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex flex-row mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand px-2 ms-5" href="index.html"><span class="brand">
+                <a class="navbar-brand px-2 ms-5 animate__animated animate__bounce" href="../index.html"><span
+                        class="brand">
                         <h1>Andes freeride</h1>
                     </span></a>
                 <img src="../iconos/montana2.png" alt="dibujo de montaña" width="30" height="24">
@@ -66,7 +68,7 @@
                             <a class="nav-home nav-link active" aria-current="page" href="../index.html">home</a>
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-filo nav-link" href="#">filosofia</a>
+                            <a class="nav-filo nav-link" href="../#filo">filosofia</a>
                         </li>
                         <li class="nav-camp nav-item px-2">
                             <a class="nav-link" href="#">campus</a>
@@ -77,13 +79,13 @@
                                 expediciones
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">bariloche</a></li>
-                                <li><a class="dropdown-item" href="#">chile</a></li>
-                                <li><a class="dropdown-item" href="#">mendoza</a></li>
+                                <li><a class="dropdown-item" href="expediciones.html#bari">bariloche</a></li>
+                                <li><a class="dropdown-item" href="expediciones.html#chile">chile</a></li>
+                                <li><a class="dropdown-item" href="expediciones.html#mendo">mendoza</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Faq</a></li>
+                                <li><a class="dropdown-item" href="faq.html">Faq</a></li>
                             </ul>
                         </li>
                         <li class="nav-contacto nav-item px-2">
@@ -94,12 +96,21 @@
             </div>
         </nav>
     </header>
+
+    <!-- prologo -->
     <div class="pre row text-center mt-5 p-5">
         <h2>Sea que estas interesado en expediciones, salidas diarias o descubrir nuestro campus, el primer paso es
             contactarnos directamente via email, telefono o completando el formulario. Contanos cuando estas planeando
             tu aventura,
             y que es lo que estas buscando. Contestaremos a la brevedad. estamos ansiosos de esquiar con vos! </h2>
     </div>
+
+    <!-- icono-up -->
+    <div class="up">
+        <a href="#main-contacto"><i class="bi bi-arrow-up-circle-fill"></i></a>
+    </div>
+
+    <!-- main-contacto -->
     <main class="contacto-main container-fluid me-5 mt-5 p-5">
 
         <div class="contacto container mt-2 ms-5 text-center" style="width: 90%; height: 100%;">
@@ -134,7 +145,7 @@
             </form>
         </div>
 
-        <div class="imagen-contacto">
+        <div class="imagen-contacto" data-aos="flip-up">
             <img class="img-fluid mt-5 me-5" style="width: 100; height: 90%;" src="../img/contacto1.jpg"
                 alt="foto de filo">
         </div>
@@ -154,21 +165,29 @@
 
     </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- footer -->
+    <footer class="row d-flex justify-content-between text-center p-4">
+        <div class="legales col-md-4">
+            <h6>todos los derechos reservados</h6>
+            <i class="bi bi-r-circle">Sones Emanuel 2023</i>
+            <h6>legales</h6>
+            <h6>Bariloche, Patagonia, Argentina</h6>
+        </div>
+        <div class="redes-f col-md-4 mb-3 mt-3">
+            <a href="https://www.instagram.com"><i class=" ic bi bi-instagram p-1"></i></a>
+            <a href="https://www.facebook.com"><i class="ic bi bi-facebook p-1"></i></a>
+            <a href="https://www.twitter.com"><i class="ic bi bi-twitter p-1"></i></a>
+            <a href="https://www.vimeo.com"><i class="ic bi bi-vimeo p-1"></i></a>
+            <a href="https://github.com/nienanel?tab=repositories"><i class="ic bi bi-github"></i></a>
+        </div>
+        <div class="links col-md-4">
+            <ul>
+                <li><a href="mapa de sitio">mapa de sitio</a></li>
+                <li><a href="faq">faq</a></li>
+                <li><a href="../index.html">home</a></li>
+            </ul>
+        </div>
+    </footer>
 
     <!---------------------- scripts ----------------------->
 
