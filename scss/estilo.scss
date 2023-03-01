@@ -1,16 +1,18 @@
-@import "variables", "header", "icono-up", "video", "hero","acordeon", "medias-querry", "footer";
+@import "variables", "header", "icono-up", "video", "hero", "acordeon", "medias-querry", "footer";
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
     width: 100vw;
     height: 100vh;
 }
-
 
 // main index
 
@@ -33,7 +35,7 @@ main {
                 background-color: $secondary-color;
 
                 &:hover {
-                    background-color: $text-color;
+                    background-color: $base-color;
                     color: $secondary-color;
                 }
             }
@@ -115,10 +117,12 @@ main {
 // pagina contacto
 
 .pre {
+    height: 25rem;
+
     h2 {
         @include h2;
-        height: 20rem;
-
+        height: 10rem;
+        background-color: black;
     }
 }
 
@@ -250,5 +254,42 @@ main {
 // faq
 
 .faq-body {
-    background-image: url(../img/fondo-faq.jpg); 
+    background-image: url(../img/fondo-faq.jpg);
+
+    .prologo-faq {
+        height: 20rem;
+
+        h2 {
+            @include h2;
+            background-color: black;
+        }
+    }
+}
+
+// campus
+
+.main-campus {
+
+    .prologo-campus {
+
+        h2 {
+            @include h2;
+        }
+
+        border-radius: 15px;
+        background-color: black;
+    }
+
+    border-radius: 15px;
+    margin-left: 1rem;
+
+    p {
+        font-weight: 800;
+    }
+
+    h3 {
+        @include h3;
+    }
+
+
 }

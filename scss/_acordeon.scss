@@ -1,4 +1,17 @@
-
 .accordion {
-  
+    .accordion-item {
+        p {
+            @include p;
+        }
+
+        button {
+            color: $text-color;
+            background-color: $secondary-color;
+
+            &:hover {
+                background-color: $text-color;
+                color: $secondary-color;
+            }
+        }
+    }
 }

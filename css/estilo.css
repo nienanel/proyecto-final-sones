@@ -108,6 +108,19 @@ video {
   background-color: #C2F739;
 }
 
+.accordion .accordion-item p {
+  font-size: 1rem;
+  font-family: "Indie Flower", cursive;
+}
+.accordion .accordion-item button {
+  color: #008CF7;
+  background-color: #C2F739;
+}
+.accordion .accordion-item button:hover {
+  background-color: #008CF7;
+  color: #C2F739;
+}
+
 @media (min-width: 450px) and (max-width: 768px) {
   .contacto-main {
     display: grid;
@@ -148,9 +161,12 @@ footer .links ul li a:hover {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
   width: 100vw;
   height: 100vh;
@@ -169,7 +185,7 @@ main .noticias .card-body button {
   background-color: #C2F739;
 }
 main .noticias .card-body button:hover {
-  background-color: #008CF7;
+  background-color: #FF0075;
   color: #C2F739;
 }
 main .filosofia {
@@ -227,11 +243,15 @@ main .galeria .fotos img:hover {
   filter: contrast(100%);
 }
 
+.pre {
+  height: 25rem;
+}
 .pre h2 {
   color: #FF0075;
   font-weight: 700;
   font-family: "Indie Flower", cursive;
-  height: 20rem;
+  height: 10rem;
+  background-color: black;
 }
 
 .contacto-main {
@@ -346,6 +366,37 @@ main .galeria .fotos img:hover {
 
 .faq-body {
   background-image: url(../img/fondo-faq.jpg);
+}
+.faq-body .prologo-faq {
+  height: 20rem;
+}
+.faq-body .prologo-faq h2 {
+  color: #FF0075;
+  font-weight: 700;
+  font-family: "Indie Flower", cursive;
+  background-color: black;
+}
+
+.main-campus {
+  border-radius: 15px;
+  margin-left: 1rem;
+}
+.main-campus .prologo-campus {
+  border-radius: 15px;
+  background-color: black;
+}
+.main-campus .prologo-campus h2 {
+  color: #FF0075;
+  font-weight: 700;
+  font-family: "Indie Flower", cursive;
+}
+.main-campus p {
+  font-weight: 800;
+}
+.main-campus h3 {
+  color: #FF0075;
+  font-family: "Barrio", cursive;
+  text-decoration: underline #FF0075;
 }
 
 /*# sourceMappingURL=estilo.css.map */
