@@ -117,83 +117,54 @@ main {
 // pagina contacto
 
 .pre {
-    height: 25rem;
+    height: 30em;
 
     h2 {
         @include h2;
-        height: 10rem;
         background-color: black;
+        border-radius: 15px;
     }
 }
 
 .contacto-main {
-    background-color: white;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "contacto imagen" "mapa imagen";
-    row-gap: 2rem;
 
-    .contacto-prologo {
-        background-color: $secondary-color;
-        border-radius: 20px;
-
-        h2 {
-            @include h2;
-        }
+    .formulario {
+        background-color: black;
+        border-radius: 15px;
+        box-shadow: 5px 5px 5px 5px $secondary-color;
+        translate: -2rem -5rem;
 
         h3 {
             @include h3;
         }
-    }
-
-    .contacto {
-        background-color: black;
-        grid-area: contacto;
-        border-radius: 15px;
-        color: white;
-        box-shadow: 5px 5px 5px 5px $secondary-color;
-
 
         ::placeholder {
             font-family: $secondary-font-family;
+            color: $base-color;
         }
-
-        .formulario {
-            .box {
-                color: $secondary-color;
-            }
-        }
-    }
-
-    .imagen-contacto {
-        grid-area: imagen;
-        display: flex;
-        justify-content: center;
-
-
     }
 
     .mapa {
-        grid-area: mapa;
         background-color: $secondary-color;
         border-radius: 15px;
+        width: 55%;
 
         h3 {
             @include h3;
         }
+    }
 
-        .datos {
-            background-color: $secondary-color;
-            display: flex;
-            flex-direction: column-reverse;
-            justify-content: center;
-            align-items: center;
-            @include caja;
+    .datos {
+        background-color: $primary-color;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        @include caja;
 
-            i {
-                color: $text-color;
-            }
+        i {
+            color: $text-color;
         }
     }
 }
@@ -212,6 +183,7 @@ main {
         h2 {
             @include h2;
             background-color: black;
+            border-radius: 15px;
         }
     }
 
@@ -290,6 +262,12 @@ main {
     h3 {
         @include h3;
     }
+}
 
+// legales
 
+.legales {
+    h2 {
+        @include h2;
+    }
 }

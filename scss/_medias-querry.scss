@@ -1,28 +1,59 @@
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 450px) and (max-width:768px) {
 
-    // pagina contacto
+    footer {
+        height: 20%;
+        width: 100%;
+        display: flex;
 
-    .contacto-main {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: "contacto" "mapa";
+
+        .redes-f {
+            display: none;
+        }
+
+        .legales {
+            font-size: 0.5rem;
+        }
+
+        .links {
+            margin-left: 5rem;
+        }
     }
 
-    // expedicones
-    
+    // pagina contacto
+
+    .up {
+        display: none;
+    }
+
+    .pre {
+        display: none;
+    }
+
+    .contacto-main {
+        margin-top: 5rem;
+
+    }
+
 }
 
 
-
-
-
-
-
-
-
-
-
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {}
+@media (min-width: 768px) and (max-width:1030px) {
+
+    // pagina contacto
+
+    footer {
+        height: 20%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+
+        .redes-f {
+            display: none;
+        }
+
+    }
+
+}

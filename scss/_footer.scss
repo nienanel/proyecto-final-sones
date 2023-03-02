@@ -5,6 +5,9 @@ footer {
     border-top: 3px solid $secondary-color;
     position: fixed bottom;
     margin-bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    height: 10rem;
 
 
     .legales {
@@ -30,6 +33,7 @@ footer {
 
         ul {
             list-style: none;
+            padding: 1rem;
 
             li {
 

@@ -50,7 +50,7 @@
                 </ul>
             </div>
         </nav>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex flex-row mb-3">
+        <nav class="navbar navbar-expand-xl navbar-light bg-light d-flex flex-row mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand px-2 ms-5 animate__animated animate__bounce" href="../index.html"><span
                         class="brand">
@@ -97,93 +97,79 @@
         </nav>
     </header>
 
-    <!-- prologo -->
-    <div class="pre container row text-center ms-5 mt-5 p-5">
-        <h2>Sea que estas interesado en expediciones, salidas diarias o descubrir nuestro campus, el primer paso es
-            contactarnos directamente via email, telefono o completando el formulario. Contanos cuando estas planeando
-            tu aventura,
-            y que es lo que estas buscando. Contestaremos a la brevedad. estamos ansiosos de esquiar con vos! </h2>
-    </div>
-
-    <!-- icono-up -->
-    <div class="up">
-        <a href="#main-contacto"><i class="bi bi-arrow-up-circle-fill"></i></a>
-    </div>
-
     <!-- main-contacto -->
-    <main class="contacto-main container-fluid me-5 mt-5 p-5">
+    <main class="contacto-main container">
 
-        <div class="contacto container mt-2 ms-5 text-center" style="width: 90%; height: 100%;">
-            <div class="contacto-prologo ms-2 mt-5">
-                <h2>CONTACTANOS</h2>
-                <h3>Consultas o reservas</h3>
+        <!-- prologo -->
+        <div class="pre ms-5 mt-5 p-5">
+            <h2>Sea que estas interesado en expediciones, salidas diarias o descubrir nuestro campus, el primer paso es
+                contactarnos directamente via email, telefono o completando el formulario. Contanos cuando estas
+                planeando
+                tu aventura,
+                y que es lo que estas buscando. Contestaremos a la brevedad. estamos ansiosos de esquiar con vos! </h2>
+        </div>
+
+        <!-- icono-up -->
+        <div class="up">
+            <a href="#main-contacto"><i class="bi bi-arrow-up-circle-fill"></i></a>
+        </div>
+
+        <!-- formulario -->
+        <form action="contacto" class="formulario ms-5">
+            <h3 class="text-center">contactanos</h3>
+            <div class="mb-3">
+                <label for="nombres" class="form-label"></label>
+                <input type="text" class="form-control" placeholder="nombre y apellido">
+                <label for="email" class="form-label"></label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
             </div>
-            <form class="formulario container-fluid mt-5">
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label"></label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="@email">
-                    <div id="emailHelp" class="form-text">todos nuestros datos estan encryptados!.</div>
+            <div class="mb-3">
+                <label for="texto" class="form-label"></label>
+                <textarea class="form-control" rows="10" placeholder="consultanos o hace tu reserva!"></textarea>
+                <div>
+                    <input class="btn btn-dark" type="button" value="enviar">
+                    <input class="btn btn-dark" type="reset" value="borrar">
                 </div>
-                <div class="mb-3">
-                    <label for="input" class="form-label"></label>
-                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="nombre y apellido">
-                </div>
-                <div class="mb-3">
-                    <textarea class="form-control" aria-label="With textarea" style="width: 100%; height: 15rem;"
-                        placeholder="Escribinos!"></textarea>
-                </div>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1"><span class="box me-5">subscribirme al
-                            newslatter</span></label>
-                </div>
-                <div class="d-flex justify-content-end">
-                    <button type="submit" class="btn btn-primary me-2">enviar</button>
-                    <button type="reset" class="btn btn-primary">borrar</button>
-                </div>
-            </form>
-        </div>
+            </div>
+        </form>
 
-        <div class="imagen-contacto" data-aos="flip-up">
-            <img class="img-fluid mt-5 me-5" style="width: 100; height: 90%;" src="../img/contacto1.jpg"
-                alt="foto de filo">
-        </div>
-
-        <div class="mapa ms-5 mt-5" style="height: 70%; width: 90%;">
-            <h3 class="text-center">buscanos!</h3>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d48115.64522997921!2d-71.45007749999999!3d-41.08586855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1676858781721!5m2!1ses-419!2sar"
-                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="datos container-fluid col-6 mt-5 p-3">
+        <section class="row">
+            <!-- mapa -->
+            <div class="mapa col-md-8 mb-5" data-aos="fade-left">
+                <h3 class="text-center">buscanos!</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d48115.64522997921!2d-71.45007749999999!3d-41.08586855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1676858781721!5m2!1ses-419!2sar"
+                    width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!-- epilogo -->
+            <div class="datos col-md-4 mt-5 ms-2" data-aos="flip-up">
                 <i class="bi bi-telephone p-1">+5492944661706</i>
                 <i class="bi bi-envelope-at-fill p-1">sonesemanuel@gmail.com</i>
             </div>
+        </section>
 
-        </div>
 
     </main>
 
     <!-- footer -->
-    <footer class="row d-flex justify-content-between text-center p-4">
-        <div class="legales col-md-4">
+    <footer class="text-center p-4">
+        <div class="legales">
             <h6>todos los derechos reservados</h6>
             <i class="bi bi-r-circle">Sones Emanuel 2023</i>
-            <h6>legales</h6>
-            <h6>Bariloche, Patagonia, Argentina</h6>
+            <h6 class="mt-5">Bariloche, Patagonia, Argentina</h6>
         </div>
-        <div class="redes-f col-md-4 mb-3 mt-3">
+        <div class="redes-f mb-3 mt-3">
             <a href="https://www.instagram.com"><i class=" ic bi bi-instagram p-1"></i></a>
             <a href="https://www.facebook.com"><i class="ic bi bi-facebook p-1"></i></a>
             <a href="https://www.twitter.com"><i class="ic bi bi-twitter p-1"></i></a>
             <a href="https://www.vimeo.com"><i class="ic bi bi-vimeo p-1"></i></a>
             <a href="https://github.com/nienanel?tab=repositories"><i class="ic bi bi-github"></i></a>
         </div>
-        <div class="links col-md-4">
+        <div class="links">
             <ul>
-                <li><a href="mapa de sitio">mapa de sitio</a></li>
-                <li><a href="faq">faq</a></li>
+                <li><a href="legales.html">legales</a></li>
+                <li><a href="faq.html">faq</a></li>
                 <li><a href="../index.html">home</a></li>
             </ul>
         </div>
