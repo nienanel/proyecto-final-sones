@@ -104,20 +104,20 @@ video {
 }
 
 .hero h2 {
-  font-family: "Indie Flower", cursive;
+  font-family: "Tilt Neon", cursive;
   background-color: #C2F739;
 }
 
 .accordion .accordion-item p {
   font-size: 1rem;
-  font-family: "Indie Flower", cursive;
+  font-family: "Tilt Neon", cursive;
 }
 .accordion .accordion-item button {
   color: #008CF7;
   background-color: #C2F739;
 }
 .accordion .accordion-item button:hover {
-  background-color: #008CF7;
+  background-color: black;
   color: #C2F739;
 }
 
@@ -209,11 +209,14 @@ main .noticias .card-body h4 {
 }
 main .noticias .card-body p {
   font-size: 1rem;
-  font-family: "Indie Flower", cursive;
+  font-family: "Tilt Neon", cursive;
+}
+main .noticias .card-body span {
+  color: #FF0075;
 }
 main .noticias .card-body button {
   text-decoration: none;
-  font-family: "Indie Flower", cursive;
+  font-family: "Tilt Neon", cursive;
   background-color: #C2F739;
 }
 main .noticias .card-body button:hover {
@@ -235,7 +238,7 @@ main .filosofia h3 {
 }
 main .filosofia p {
   font-size: 1rem;
-  font-family: "Indie Flower", cursive;
+  font-family: "Tilt Neon", cursive;
 }
 main .filosofia h4 {
   font-weight: 700;
@@ -252,7 +255,7 @@ main .filosofia .guias img:hover {
   filter: grayscale(10%);
 }
 main .galeria .galeria2 {
-  background-color: white;
+  background-color: black;
   border-radius: 15px;
 }
 main .galeria .galeria2 h3 {
@@ -261,12 +264,13 @@ main .galeria .galeria2 h3 {
   text-decoration: underline #FF0075;
 }
 main .galeria .fotos {
-  background-color: white;
-  row-gap: 2rem;
+  background-color: black;
+  row-gap: 1rem;
+  display: flex;
+  justify-content: space-between;
 }
 main .galeria .fotos img {
-  border: 3px solid #C2F739;
-  box-shadow: 4px 4px 4px 4px #C2F739;
+  box-shadow: 4px 3px 3px 3px white;
   transition: all ease-in 0.5s;
   filter: contrast(50%);
 }
@@ -281,7 +285,7 @@ main .galeria .fotos img:hover {
 .pre h2 {
   color: #FF0075;
   font-weight: 700;
-  font-family: "Indie Flower", cursive;
+  font-family: "Tilt Neon", cursive;
   background-color: black;
   border-radius: 15px;
 }
@@ -298,7 +302,7 @@ main .galeria .fotos img:hover {
   text-decoration: underline #FF0075;
 }
 .contacto-main .formulario ::placeholder {
-  font-family: "Indie Flower", cursive;
+  font-family: "Tilt Neon", cursive;
   color: #FF0075;
 }
 .contacto-main .mapa {
@@ -327,7 +331,7 @@ main .galeria .fotos img:hover {
 
 .expe-main p {
   font-size: 1rem;
-  font-family: "Indie Flower", cursive;
+  font-family: "Tilt Neon", cursive;
 }
 .expe-main .expe-prologo {
   height: 25rem;
@@ -335,7 +339,7 @@ main .galeria .fotos img:hover {
 .expe-main .expe-prologo h2 {
   color: #FF0075;
   font-weight: 700;
-  font-family: "Indie Flower", cursive;
+  font-family: "Tilt Neon", cursive;
   background-color: black;
   border-radius: 15px;
 }
@@ -382,7 +386,7 @@ main .galeria .fotos img:hover {
 .faq-body .prologo-faq h2 {
   color: #FF0075;
   font-weight: 700;
-  font-family: "Indie Flower", cursive;
+  font-family: "Tilt Neon", cursive;
   background-color: black;
 }
 
@@ -397,7 +401,7 @@ main .galeria .fotos img:hover {
 .main-campus .prologo-campus h2 {
   color: #FF0075;
   font-weight: 700;
-  font-family: "Indie Flower", cursive;
+  font-family: "Tilt Neon", cursive;
 }
 .main-campus p {
   font-weight: 800;
@@ -411,7 +415,7 @@ main .galeria .fotos img:hover {
 .legales h2 {
   color: #FF0075;
   font-weight: 700;
-  font-family: "Indie Flower", cursive;
+  font-family: "Tilt Neon", cursive;
 }
 
 /*# sourceMappingURL=estilo.css.map */

@@ -19,6 +19,7 @@ body {
 main {
 
     .noticias {
+
         .card-body {
 
             h4 {
@@ -27,6 +28,10 @@ main {
 
             p {
                 @include p;
+            }
+
+            span {
+                color: $base-color;
             }
 
             button {
@@ -86,7 +91,7 @@ main {
     .galeria {
 
         .galeria2 {
-            background-color: white;
+            background-color: black;
             border-radius: 15px;
 
             h3 {
@@ -95,13 +100,15 @@ main {
         }
 
         .fotos {
-            background-color: white;
-            row-gap: 2rem;
+            background-color: black;
+            row-gap: 1rem;
+            display: flex;
+            justify-content: space-between;
 
 
             img {
-                border: 3px solid $secondary-color;
-                box-shadow: 4px 4px 4px 4px $secondary-color;
+
+                box-shadow: 4px 3px 3px 3px white;
                 transition: all ease-in .5s;
                 filter: contrast(50%);
 
