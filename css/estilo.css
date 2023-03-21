@@ -3,6 +3,9 @@
 /********fuentes*********/
 /******paleta de colores *****/
 /******* mixin *********/
+header {
+  background-size: cover;
+}
 header .navbar {
   font-family: "Barrio", cursive;
   font-size: 2rem;
@@ -62,6 +65,10 @@ header .navbar .collapse .nav-contacto {
 header .navbar .collapse .nav-contacto:hover {
   background-color: #FF0075;
 }
+header .navbar2 {
+  width: 95%;
+  text-align: center;
+}
 header .navbar2 ul {
   list-style: none;
 }
@@ -74,20 +81,6 @@ header .navbar2 ul li i {
 }
 header .navbar2 ul li i:hover {
   color: #FF0075;
-}
-
-.up a {
-  text-decoration: none;
-}
-.up a i {
-  font-size: 1.5rem;
-  color: #C2F739;
-  position: fixed;
-  z-index: 1;
-  transition: all 0.5s;
-}
-.up a i:hover {
-  font-size: 2rem;
 }
 
 video {
@@ -148,7 +141,8 @@ footer {
   margin-bottom: 0;
   display: flex;
   justify-content: space-around;
-  height: 10rem;
+  align-items: center;
+  height: 8rem;
 }
 footer .legales {
   font-weight: 500;
@@ -161,13 +155,13 @@ footer .redes-f a .ic {
 footer .redes-f a .ic:hover {
   color: #FF0075;
 }
-footer .links ul {
+footer .links ul li {
   list-style: none;
-  padding: 1rem;
 }
 footer .links ul li a {
-  text-decoration: underline;
+  text-decoration: none;
   color: #C2F739;
+  font-weight: 700;
 }
 footer .links ul li a:hover {
   color: #FF0075;
@@ -176,17 +170,25 @@ footer .links ul li a:hover {
 * {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   padding: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.hero {
+  margin-top: 8rem;
+  width: 95%;
+  height: 15rem;
 }
 
 main .noticias h3 {
+  background-color: black;
+  width: 95%;
   color: #FF0075;
   font-family: "Barrio", cursive;
   text-decoration: underline #FF0075;
@@ -213,7 +215,7 @@ main .noticias .card-body button:hover {
 main .filosofia {
   background-color: white;
   row-gap: 2rem;
-  width: 100vw;
+  width: 95%;
   border-radius: 10px;
 }
 main .filosofia h3 {

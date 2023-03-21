@@ -7,7 +7,8 @@ footer {
     margin-bottom: 0;
     display: flex;
     justify-content: space-around;
-    height: 10rem;
+    align-items: center;
+    height: 8rem;
 
 
     .legales {
@@ -32,14 +33,14 @@ footer {
     .links {
 
         ul {
-            list-style: none;
-            padding: 1rem;
 
             li {
+                list-style: none;
 
                 a {
-                    text-decoration: underline;
+                    text-decoration: none;
                     color: $secondary-color;
+                    font-weight: 700;
 
                     &:hover {
                         color: $base-color;
